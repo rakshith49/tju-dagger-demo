@@ -1,2 +1,2 @@
-# BlrDroidDevfestDemo
-A demo application to demonstrate MVP in Android
+# TJU Dagger Demo
+A demo application to demonstrate Dagger in Android
