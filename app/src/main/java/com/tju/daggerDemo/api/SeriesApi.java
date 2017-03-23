@@ -1,12 +1,14 @@
 package com.tju.daggerDemo.api;
 
 import com.google.gson.Gson;
+import com.tju.daggerDemo.model.pojo.SeriesDetailModel;
 import com.tju.daggerDemo.model.pojo.SeriesModel;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+import rx.Completable;
 import rx.Observable;
 
 /**
@@ -37,5 +39,10 @@ public class SeriesApi {
 
     public Observable<SeriesModel> getSeries() {
         return getSeriesApiService().getSeries();
+    }
+
+    public Observable<SeriesDetailModel> getSeriesDetails(String imdbID) {
+        return getSeriesApiService().getSeriesDetail(imdbID);
+
     }
 }

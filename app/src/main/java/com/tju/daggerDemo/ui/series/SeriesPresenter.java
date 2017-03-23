@@ -49,7 +49,7 @@ public class SeriesPresenter extends BasePresenter implements SeriesContract.Pre
 
     @Override
     public void clickedSeriesItem(SearchModel searchModel) {
-        //todo handle
+        mModel.seariesManager.makeSeriesDetailApiCall(searchModel.getImdbID());
     }
 
     @Override
