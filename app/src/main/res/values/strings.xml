@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">BlrDroid Devfest Demo</string>
+    <string name="app_name">TJU Dagger Demo</string>
+    <string name="series">Series</string>
+    <string name="cleartax_api_url">http://www.omdbapi.com</string>
 </resources>
