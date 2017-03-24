@@ -97,8 +97,8 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.SeriesView
             yearView.setText((!series.getYear().isEmpty()) ? "Year : " + series.getYear() : "Year : NA");
             Glide.with(posterImageView.getContext())
                     .load(series.getPosterImage())
-                    .placeholder(ContextCompat.getDrawable(posterImageView.getContext(),R.drawable.cover1))
-                    .error(ContextCompat.getDrawable(posterImageView.getContext(),R.drawable.cover1))
+                    .placeholder(ContextCompat.getDrawable(posterImageView.getContext(),R.drawable.cover2))
+                    .error(ContextCompat.getDrawable(posterImageView.getContext(),R.drawable.cover2))
                     .into(posterImageView);
         }
     }
